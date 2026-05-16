@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jenkins-python-demo"
+version = "1.0.0"
+description = "Simple Python package for Jenkins CI/CD demo"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Jenkins Demo" }
+]
+dependencies = []
+
+[project.scripts]
+jenkins-python-demo = "jenkins_python_demo.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
