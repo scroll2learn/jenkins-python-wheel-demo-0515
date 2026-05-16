@@ -1,5 +1,7 @@
 pipeline {
-    label 'linux'
+    agent {
+        label 'linux'
+    }
 
     environment {
         APP_NAME = 'jenkins_python_demo'
