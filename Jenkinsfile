@@ -47,6 +47,7 @@ pipeline {
                 sh '''
                     . .venv/bin/activate
                     python -m pip install -r requirements-dev.txt
+                    python -m pip install -e .
                 '''
             }
         }
