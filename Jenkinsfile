@@ -6,8 +6,8 @@ pipeline {
     environment {
         APP_NAME = 'jenkins_python_demo'
         APP_VERSION = '1.0.0'
-        DEPLOY_DIR = '/opt/jenkins-python-wheel-demo'
-        VENV_DIR = '/opt/jenkins-python-wheel-demo/venv'
+        DEPLOY_DIR = '/home/ec2-user/jenkins-python-wheel-demo'
+        VENV_DIR = '/home/ec2-user/jenkins-python-wheel-demo/venv'
     }
 
     stages {
